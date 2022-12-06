@@ -4,14 +4,17 @@ import de.neuefische.ordersystemspringboot.model.Order;
 import de.neuefische.ordersystemspringboot.model.Product;
 import de.neuefische.ordersystemspringboot.repo.OrderRepo;
 import de.neuefische.ordersystemspringboot.repo.ProductRepo;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
 
 import java.util.Map;
-
+@Service
+@RequiredArgsConstructor
 public class ShopService  {
 //Attribute
 
-    private ProductRepo productRepo;
-    private OrderRepo orderRepo;
+    private final ProductRepo productRepo;
+    private final OrderRepo orderRepo;
 
 
     // getProduct(){
