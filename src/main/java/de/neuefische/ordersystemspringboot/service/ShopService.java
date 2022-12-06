@@ -4,12 +4,15 @@ import de.neuefische.ordersystemspringboot.model.Order;
 import de.neuefische.ordersystemspringboot.model.Product;
 import de.neuefische.ordersystemspringboot.repo.OrderRepo;
 import de.neuefische.ordersystemspringboot.repo.ProductRepo;
+import lombok.Data;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.Map;
 @Service
 @RequiredArgsConstructor
+@Data
+
 public class ShopService  {
 //Attribute
 
